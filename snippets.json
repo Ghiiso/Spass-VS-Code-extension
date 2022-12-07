@@ -2,61 +2,61 @@
     "begin_problem": {
         "scope": "spass",
         "prefix": "begin_problem",
-        "body": "%https://webspass.spass-prover.org/\nbegin_problem($1).\n\tlist_of_descriptions.\n\tname({*name*}).\n\tauthor({*author*}).\n\tstatus(unsatisfiable).\n\tdescription({*description*}).\n\tend_of_list.\n\n\tlist_of_symbols.\n\tend_of_list.\n\n\tlist_of_formulae(axioms).\n\tend_of_list.\n\n\tlist_of_formulae(conjectures).\n\tend_of_list.\n\n\tlist_of_settings(SPASS).\n\t{*set_flag(PGiven,1).\n\tset_flag(PProblem,0).*}\n\tend_of_list.\nend_problem."
+        "body": "%https://webspass.spass-prover.org/\nbegin_problem($0).\n\tlist_of_descriptions.\n\tname({*name*}).\n\tauthor({*author*}).\n\tstatus(unsatisfiable).\n\tdescription({*description*}).\n\tend_of_list.\n\n\tlist_of_symbols.\n\tend_of_list.\n\n\tlist_of_formulae(axioms).\n\tend_of_list.\n\n\tlist_of_formulae(conjectures).\n\tend_of_list.\n\n\tlist_of_settings(SPASS).\n\t{*\n\tset_flag(PGiven,1).\n\tset_flag(PProblem,0).\n\t*}\n\tend_of_list.\nend_problem."
     },
     "or": {
         "scope": "spass",
         "prefix": "or",
-        "body": "or($1,)"
+        "body": "or($0,)"
     },
     "and": {
     "scope": "spass",
     "prefix": "and",
-    "body": "and($1,)"
+    "body": "and($0,)"
     },
     "implies": {
         "scope": "spass",
         "prefix": "implies",
-        "body": "implies($1,)"
+        "body": "implies($0,)"
     },
     "equiv": {
         "scope": "spass",
         "prefix": "equiv",
-        "body": "equiv($1,)"
+        "body": "equiv($0,)"
     },
     "equal": {
         "scope": "spass",
         "prefix": "equal",
-        "body": "equal($1,)"
+        "body": "equal($0,)"
     },
     "forall": {
         "scope": "spass",
         "prefix": "forall",
-        "body": "forall([$1],)"
+        "body": "forall([$0],)"
     },
     "exists": {
         "scope": "spass",
         "prefix": "exists",
-        "body": "exists([$1],)"
+        "body": "exists([$0],)"
     },
     "not": {
         "scope": "spass",
         "prefix": "not",
-        "body": "not($1)"
+        "body": "not($0)"
     },
     "functions": {
         "scope": "spass",
         "prefix": "functions",
-        "body": "functions[($1,)]."
+        "body": "functions[($0,)]."
     },
     "predicates": {
         "scope": "spass",
         "prefix": "predicates",
-        "body": "predicates[($1,)]."
+        "body": "predicates[($0,)]."
     },
     "formula": {
         "scope": "spass",
         "prefix": "formula",
-        "body": "formula($1)."
+        "body": "formula($0)."
     }
 }

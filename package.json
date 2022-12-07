@@ -8,13 +8,13 @@
   },
   "icon": "icons/icon.png",
   "keywords": [
-    "spass"
+    "spass","Spass"
   ],
   "author": {
     "name": "Davide Ghisolfi"
   },
   "categories": [
-    "Programming Languages"
+    "Programming Languages","Snippets","Education"
   ],
   "contributes": {
     "languages": [{
