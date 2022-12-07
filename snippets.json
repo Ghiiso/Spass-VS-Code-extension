@@ -2,7 +2,7 @@
     "begin_problem": {
         "scope": "spass",
         "prefix": "begin_problem",
-        "body": "begin_problem($1).\n\tlist_of_descriptions.\n\tname({*name*}).\n\tauthor({*author*}).\n\tstatus(unsatisfiable).\n\tdescription({*description*}).\n\tend_of_list.\n\n\tlist_of_symbols.\n\tend_of_list.\n\n\tlist_of_formulae(axioms).end_of_list.\n\n\tlist_of_formulae(conjectures).\n\tend_of_list.\n\n\tlist_of_settings(SPASS).\n\t{*set_flag(PGiven,1).\n\tset_flag(PProblem,0).*}\n\tend_of_list.\nend_problem."
+        "body": "%https://webspass.spass-prover.org/\nbegin_problem($1).\n\tlist_of_descriptions.\n\tname({*name*}).\n\tauthor({*author*}).\n\tstatus(unsatisfiable).\n\tdescription({*description*}).\n\tend_of_list.\n\n\tlist_of_symbols.\n\tend_of_list.\n\n\tlist_of_formulae(axioms).\n\tend_of_list.\n\n\tlist_of_formulae(conjectures).\n\tend_of_list.\n\n\tlist_of_settings(SPASS).\n\t{*set_flag(PGiven,1).\n\tset_flag(PProblem,0).*}\n\tend_of_list.\nend_problem."
     },
     "or": {
         "scope": "spass",
@@ -43,5 +43,20 @@
         "scope": "spass",
         "prefix": "not",
         "body": "not($1)"
+    },
+    "functions": {
+        "scope": "spass",
+        "prefix": "functions",
+        "body": "functions[($1,)]."
+    },
+    "predicates": {
+        "scope": "spass",
+        "prefix": "predicates",
+        "body": "predicates[($1,)]."
+    },
+    "formula": {
+        "scope": "spass",
+        "prefix": "formula",
+        "body": "formula($1)."
     }
 }
