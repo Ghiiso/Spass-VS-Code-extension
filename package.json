@@ -1,0 +1,42 @@
+{
+  "name": "spass",
+  "displayName": "Spaß",
+  "description": "Spaß sintax highlighting and code snippets",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.73.0"
+  },
+  "icon": "icons/icon.png",
+  "keywords": [
+    "spass"
+  ],
+  "author": {
+    "name": "Davide Ghisolfi"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "spass",
+      "aliases": ["Spass", "spass"],
+      "extensions": [".sps",".spass"],
+      "configuration": "./language-configuration.json",
+      "icon": {
+        "light": "icons/icon_light.png",
+        "dark": "icons/icon_dark.png"
+      }
+    }],
+    "grammars": [{
+      "language": "spass",
+      "scopeName": "source.spass",
+      "path": "./syntaxes/spass.tmLanguage.json"
+    }],
+    "snippets": [
+      {
+        "language": "spass",
+        "path": "./snippets.json"
+      }
+    ]
+  }
+}
