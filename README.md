@@ -11,14 +11,16 @@ Once the extension is installed, you can use its features by creating a new file
 - code snippets for the most used function such as
     - **Logical connectives**  `and(,)` , `implies([],)` etc.
     - **built-in functions** `predicates[(,)].` , `functions[(,)].` , `formula().`
-> you can use `begin_problem().` snippet to add a full program template to your file: the template also contains the link to the online compiler
+> you can use `begin_problem().` snippet to add a full program template to your file: the template also contains a link to the online compiler
 
 ## Future features
 - linting
-- user-defined functions and predicates highlighting
 - local code compiling
 
 ## Release Notes
 
 ### 1.0.0
 Initial release of Spaß extension
+
+### 1.1.0
+User-defined functions and predicates are now highlited. Minor changes to `begin_problem().` snippet

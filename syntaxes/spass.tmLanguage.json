@@ -6,13 +6,13 @@
 			"include": "#comments"
 		},
 		{
+			"include": "#strings"
+		},
+		{
 			"include": "#keywords"
 		},
 		{
-			"include": "#declaration"
-		},
-		{
-			"include": "#strings"
+			"include": "#variable"
 		}
 	],
 	"repository": {
@@ -25,24 +25,66 @@
 				}
 			]
 		},
-		"keywords": {
-			"patterns": [{
-				"name": "entity.name.function.spass",
-				"match": "\\b(forall|exists|equal|equiv|implies|or|and|not)\\b"
-			},
-			{
-				"name": "keyword.control.spass",
-				"match": "\\b(name|author|status|description|formula|functions|predicates)\\b"
-			},
-			{
-				"name": "entity.name.type.class.spass",
-				"match": "\\b(begin_problem|end_problem)\\b"
-			},
-			{
-				"name": "storage.type.spass",
-				"match": "\\b(end_of_list|list_of_descriptions|list_of_formulae|list_of_settings|list_of_symbols|set_flag)\\b"
-			}]
+		"variable": {
+			"patterns": [
+				{
+					"begin": "\\[",
+					"end": "\\]",
+					"patterns": [
+						{
+							"begin": "\\(",
+							"end": "\\)",
+							"patterns": [
+								{
+									"name": "variable.other.property.spass",
+									"match": "([a-zA-Z])"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "variable.other.property.spass",
+					"match": "\\b(axioms|conjectures|SPASS|unsatisfiable)\\b"
+				},
+				{
+					"begin": "(?<=formula)\\(",
+					"end": "\\)\\.",
+					"patterns": [
+						{
+							"name": "entity.name.function.spass",
+							"match": "\\b(forall|exists|equal|equiv|implies|or|and|not)\\b"
+						},
+						{
+							"name": "variable.other.property.spass",
+							"match": "\\b([a-zA-Z])*\\("
+						}
+					]
+				}
+			]
 		},
+
+		"keywords": {
+			"patterns": [
+				{
+					"name": "entity.name.function.spass",
+					"match": "\\b(forall|exists|equal|equiv|implies|or|and|not)\\b"
+				},
+				{
+					"name": "keyword.control.spass",
+					"match": "\\b(name|author|status|description|formula|functions|predicates)\\b"
+				},
+				{
+					"name": "entity.name.type.class.spass",
+					"match": "\\b(begin_problem|end_problem)\\b"
+				},
+				{
+					"name": "storage.type.spass",
+					"match": "\\b(end_of_list|list_of_descriptions|list_of_formulae|list_of_settings|list_of_symbols|set_flag)\\b"
+				}
+			]
+		},
+
 		"strings": {
 			"name": "string.quoted.double.spass",
 			"begin": "\\*",
