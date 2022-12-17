@@ -2,7 +2,7 @@
   "name": "spass",
   "displayName": "Spaß",
   "description": "Spaß sintax highlighting and code snippets",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "engines": {
     "vscode": "^1.73.0"
   },
@@ -50,7 +50,7 @@
       {
         "command": "spass.run",
         "title": "Run Spass file",
-        "icon":"icons/icon.png"
+        "icon": "icons/icon.png"
       }
     ],
     "grammars": [
@@ -82,11 +82,11 @@
     "watch": "tsc -watch -p ./"
   },
   "devDependencies": {
-		"@types/node": "^16.11.7",
-		"@types/vscode": "^1.73.0",
-		"@typescript-eslint/eslint-plugin": "^5.42.0",
-		"@typescript-eslint/parser": "^5.42.0",
-		"eslint": "^8.26.0",
-		"typescript": "^4.8.4"
-	}
+    "@types/node": "^16.11.7",
+    "@types/vscode": "^1.73.0",
+    "@typescript-eslint/eslint-plugin": "^5.42.0",
+    "@typescript-eslint/parser": "^5.42.0",
+    "eslint": "^8.26.0",
+    "typescript": "^4.8.4"
+  }
 }
