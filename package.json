@@ -24,6 +24,8 @@
     "Snippets",
     "Education"
   ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
   "contributes": {
     "languages": [
       {
@@ -33,6 +35,7 @@
           "spass"
         ],
         "extensions": [
+          ".dfg",
           ".sps",
           ".spass"
         ],
@@ -41,6 +44,13 @@
           "light": "icons/icon_light.png",
           "dark": "icons/icon_dark.png"
         }
+      }
+    ],
+    "commands": [
+      {
+        "command": "spass.run",
+        "title": "Run Spass file",
+        "icon":"icons/icon.png"
       }
     ],
     "grammars": [
@@ -55,6 +65,28 @@
         "language": "spass",
         "path": "./snippets.json"
       }
-    ]
-  }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "when": "editorLangId== spass",
+          "command": "spass.run",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+		"@types/node": "^16.11.7",
+		"@types/vscode": "^1.73.0",
+		"@typescript-eslint/eslint-plugin": "^5.42.0",
+		"@typescript-eslint/parser": "^5.42.0",
+		"eslint": "^8.26.0",
+		"typescript": "^4.8.4"
+	}
 }
