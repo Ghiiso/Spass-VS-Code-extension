@@ -2,7 +2,7 @@
   "name": "spass",
   "displayName": "Spaß",
   "description": "Spaß sintax highlighting and code snippets",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "engines": {
     "vscode": "^1.73.0"
   },
