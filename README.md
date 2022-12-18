@@ -21,11 +21,11 @@ Once the extension is installed, you can use its features by creating a new file
 
 ## Release Notes
 
-### 1.0.0
-Initial release of Spaß extension
+### 1.2.0
+Code can be compiled locally by using the **Run Spass file** button in the navbar or by using the equivalent command in the command palette
 
 ### 1.1.0
 User-defined functions and predicates are now highlited. Minor changes to `begin_problem().` snippet
 
-### 1.2.0
-Code can be compiled locally by using the **Run Spass file** button in the navbar or by using the equivalent command in the command palette
+### 1.0.0
+Initial release of Spaß extension

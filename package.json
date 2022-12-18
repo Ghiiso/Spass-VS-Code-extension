@@ -50,7 +50,7 @@
       {
         "command": "spass.run",
         "title": "Run Spass file",
-        "icon": "icons/icon.png"
+        "icon": "icons/icon_butt.png"
       }
     ],
     "grammars": [
