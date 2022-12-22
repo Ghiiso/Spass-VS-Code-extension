@@ -66,8 +66,19 @@
         "path": "./snippets.json"
       }
     ],
+    "keybindings":{
+      "command": "spass.run",
+      "key": "ctrl+alt+s"
+    },
     "menus": {
       "editor/title": [
+        {
+          "when": "editorLangId== spass",
+          "command": "spass.run",
+          "group": "navigation"
+        }
+      ],
+      "editor/context": [
         {
           "when": "editorLangId== spass",
           "command": "spass.run",

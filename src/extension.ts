@@ -26,14 +26,12 @@ function run(){
 
     if(currentPath){ // se un file è aperto, esegue i comandi
         let currentFile = currentPath[currentPath.length-1]; // l'ultimo elemento è il nome del file
-        currentPath.pop(); // rimuove il nome del file dal path
         currentPath.splice(0,1);
         if(!activeTerminal){ // se non ci sono terminali aperti, crea un nuovo terminale con il nome del file
             activeTerminal = vscode.window.createTerminal(currentFile);
         }
         activeTerminal.show(false); // mostra il terminale
-        activeTerminal?.sendText(`cd '${currentPath.join("/")}'`); // cambia la directory
-        activeTerminal?.sendText(`spass ${currentFile}`); // esegue l'interprete di spass
+        activeTerminal?.sendText(`spass '${currentPath.join("/")}'`); // esegue l'interprete di spass
     }
     else{
         vscode.window.showErrorMessage("Spass Error: there's no active file to run");

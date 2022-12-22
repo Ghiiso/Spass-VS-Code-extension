@@ -1,8 +1,15 @@
 # CHANGELOG
 
+## 1.2.2 ()
+
+minor changes to **Run Spass File** command and menu appearance
+
+Fix:
+- files with spaces in the name can now be executed
+
 ## 1.2.1 (18-12-2022)
 
-minor fixes to **Run Spass File** command, icon restyling
+minor fixes to **Run Spass File** command, icon restyling -> [98fa2c2](https://github.com/Ghiiso/Spass-VS-Code-extension/tree/98fa2c263e778a24e66a263929a12083ba6a9f47)
 
 ## 1.2.0 (17-12-2022)
 
