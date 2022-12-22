@@ -2,7 +2,7 @@
   "name": "spass",
   "displayName": "Spaß",
   "description": "Spaß sintax highlighting and code snippets",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "engines": {
     "vscode": "^1.73.0"
   },
@@ -66,7 +66,7 @@
         "path": "./snippets.json"
       }
     ],
-    "keybindings":{
+    "keybindings": {
       "command": "spass.run",
       "key": "ctrl+alt+s"
     },
