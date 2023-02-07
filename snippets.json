@@ -2,7 +2,7 @@
     "begin_problem": {
         "scope": "spass",
         "prefix": "begin_problem",
-        "body": "%https://webspass.spass-prover.org/\nbegin_problem($1).\n\tlist_of_descriptions.\n\tname({*name*}).\n\tauthor({*author*}).\n\tstatus(unsatisfiable).\n\tdescription({*description*}).\n\tend_of_list.\n\n\tlist_of_symbols.\n\t\tfunctions[($2,)]\n\t\tpredicates[($3,)]\n\tend_of_list.\n\n\tlist_of_formulae(axioms).\n\t\t$0\n\tend_of_list.\n\n\tlist_of_formulae(conjectures).\n\t\t\n\tend_of_list.\n\n\tlist_of_settings(SPASS).\n\t{*\n\tset_flag(PGiven,1).\n\tset_flag(PProblem,0).\n\t*}\n\tend_of_list.\nend_problem."
+        "body": "%https://webspass.spass-prover.org/\nbegin_problem($1).\n\tlist_of_descriptions.\n\tname({*name*}).\n\tauthor({*author*}).\n\tstatus(unsatisfiable).\n\tdescription({*description*}).\n\tend_of_list.\n\n\tlist_of_symbols.\n\t\tfunctions[($2,)].\n\t\tpredicates[($3,)].\n\tend_of_list.\n\n\tlist_of_formulae(axioms).\n\t\t$0\n\tend_of_list.\n\n\tlist_of_formulae(conjectures).\n\t\t\n\tend_of_list.\n\n\tlist_of_settings(SPASS).\n\t{*\n\tset_flag(PGiven,1).\n\tset_flag(PProblem,0).\n\t*}\n\tend_of_list.\nend_problem."
     },
     "or": {
         "scope": "spass",

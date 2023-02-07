@@ -19,9 +19,8 @@
 		"comments": {
 			"patterns": [
 				{
-					"begin": "\\%",
-					"end": "\\n",
-					"name": "comment.line.number-sign.spass"
+					"name": "comment.line.number-sign.spass",
+					"match": "\\%.*"
 				}
 			]
 		},
@@ -58,6 +57,10 @@
 						{
 							"name": "variable.other.property.spass",
 							"match": "\\b([a-zA-Z])*\\("
+						},
+						{
+							"name": "comment.line.number-sign.spass",
+							"match": "\\%.*"
 						}
 					]
 				}

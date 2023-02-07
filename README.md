@@ -3,7 +3,7 @@
 Unofficial sintax highlighting and code snippets extension for Spaß first order theorem prover.
 
 ## Get started
-Once the extension is installed, you can use its features by creating a new file with the `.dfg`, `.sps` or `.spass` extension or by manually setting the **language mode** to *Spass*. You can run your code [here](https://webspass.spass-prover.org/) or you can run it locally if you have a local installation of Spass by using the **Run Spass file** button in the navbar or the equivalent command in the command palette. You can download Spass [here](https://www.mpi-inf.mpg.de/departments/automation-of-logic/software/spass-workbench/classic-spass-theorem-prover/download).
+Once the extension is installed, you can use its features by creating a new file with the `.dfg`, `.sps` or `.spass` extension or by manually setting the **language mode** to *Spass*. You can [run your code here](https://webspass.spass-prover.org/) or you can run it locally if you have a local installation of Spass by using the **Run Spass file** button in the navbar, by pressing *Ctrl+Alt+S* or by using the equivalent command in the command palette. You can [download Spass here](https://www.mpi-inf.mpg.de/departments/automation-of-logic/software/spass-workbench/classic-spass-theorem-prover/download).
 
 > **!** &nbsp; in order to run your code locally you must add Spass root folder to your PATH
 
